@@ -1,0 +1,291 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* HackOps HealthHub Design System - Healthcare & Medical Technology Theme */
+
+@layer base {
+  :root {
+    /* Healthcare Color Palette */
+    --background: 210 25% 98%;
+    --foreground: 210 30% 8%;
+
+    --card: 210 20% 99%;
+    --card-foreground: 210 30% 8%;
+
+    --popover: 210 20% 99%;
+    --popover-foreground: 210 30% 8%;
+
+    /* Medical Blue Primary */
+    --primary: 210 100% 50%;
+    --primary-foreground: 210 20% 99%;
+    --primary-glow: 210 100% 60%;
+    
+    /* Medical Green Secondary */
+    --secondary: 150 100% 35%;
+    --secondary-foreground: 210 20% 99%;
+    --secondary-glow: 150 100% 45%;
+
+    /* Healthcare Accents */
+    --accent: 200 100% 95%;
+    --accent-foreground: 210 100% 50%;
+    --accent-glow: 200 100% 85%;
+
+    /* Functional Colors */
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 15% 45%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 99%;
+
+    --border: 210 20% 92%;
+    --input: 210 20% 96%;
+    --ring: 210 100% 50%;
+
+    /* Healthcare Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(210 25% 98%) 0%, hsl(210 30% 96%) 50%, hsl(200 25% 94%) 100%);
+    --gradient-medical: linear-gradient(45deg, hsl(var(--primary) / 0.1), hsl(var(--secondary) / 0.1));
+    
+    /* Medical Glows & Effects */
+    --glow-primary: 0 0 40px hsl(var(--primary) / 0.3);
+    --glow-secondary: 0 0 40px hsl(var(--secondary) / 0.3);
+    --glow-accent: 0 0 30px hsl(var(--accent-glow) / 0.4);
+    
+    /* Medical Shadows */
+    --shadow-medical: 0 4px 20px hsl(var(--primary) / 0.1);
+    --shadow-card: 0 2px 10px hsl(210 15% 45% / 0.1);
+    --shadow-elevated: 0 8px 30px hsl(210 15% 45% / 0.15);
+
+    --radius: 0.75rem;
+
+    /* Sidebar (using medical theme) */
+    --sidebar-background: 210 20% 99%;
+    --sidebar-foreground: 210 30% 8%;
+    --sidebar-primary: 210 100% 50%;
+    --sidebar-primary-foreground: 210 20% 99%;
+    --sidebar-accent: 210 20% 96%;
+    --sidebar-accent-foreground: 210 30% 8%;
+    --sidebar-border: 210 20% 92%;
+    --sidebar-ring: 210 100% 50%;
+    
+    /* Medical Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-medical: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .dark {
+    --background: 210 30% 8%;
+    --foreground: 210 20% 99%;
+
+    --card: 210 25% 10%;
+    --card-foreground: 210 20% 99%;
+
+    --popover: 210 25% 10%;
+    --popover-foreground: 210 20% 99%;
+
+    --primary: 210 100% 60%;
+    --primary-foreground: 210 30% 8%;
+    --primary-glow: 210 100% 70%;
+
+    --secondary: 150 100% 45%;
+    --secondary-foreground: 210 30% 8%;
+    --secondary-glow: 150 100% 55%;
+
+    --muted: 210 25% 15%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 200 50% 15%;
+    --accent-foreground: 210 100% 60%;
+    --accent-glow: 200 50% 25%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 99%;
+
+    --border: 210 25% 15%;
+    --input: 210 25% 15%;
+    --ring: 210 100% 60%;
+    
+    --sidebar-background: 210 30% 8%;
+    --sidebar-foreground: 210 20% 99%;
+    --sidebar-primary: 210 100% 60%;
+    --sidebar-primary-foreground: 210 30% 8%;
+    --sidebar-accent: 210 25% 15%;
+    --sidebar-accent-foreground: 210 20% 99%;
+    --sidebar-border: 210 25% 15%;
+    --sidebar-ring: 210 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(210 20% 96%) 100%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Healthcare & Medical Animation Classes */
+@layer components {
+  .medical-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 rounded-xl shadow-[var(--shadow-medical)] transition-all duration-300;
+  }
+
+  .medical-card:hover {
+    @apply shadow-[var(--shadow-elevated)] transform translate-y-[-4px];
+    box-shadow: var(--glow-primary);
+  }
+
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .medical-gradient {
+    background: var(--gradient-medical);
+  }
+
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+
+  .glow-secondary {
+    box-shadow: var(--glow-secondary);
+  }
+
+  .pulse-medical {
+    animation: pulse-medical 2s ease-in-out infinite;
+  }
+
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .particle {
+    animation: particle-float 8s linear infinite;
+  }
+}
+
+/* Medical Keyframe Animations */
+@keyframes pulse-medical {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes particle-float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.1);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+/* Accessibility Styles */
+.high-contrast {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 10%;
+  --card-foreground: 0 0% 100%;
+  --border: 0 0% 30%;
+  --primary: 180 100% 50%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 0 0% 20%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 80%;
+}
+
+/* Color Blind Support */
+.deuteranopia {
+  filter: url(#deuteranopia-filter);
+}
+
+.protanopia {
+  filter: url(#protanopia-filter);
+}
+
+.tritanopia {
+  filter: url(#tritanopia-filter);
+}
+
+/* Font Size Options */
+.font-large {
+  font-size: 1.2em;
+}
+
+.font-extra-large {
+  font-size: 1.5em;
+}
+
+/* Keyboard Navigation */
+.keyboard-nav-enabled *:focus {
+  outline: 3px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+.keyboard-focus-visible *:focus {
+  outline: 3px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  padding: 8px;
+  z-index: 1000;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
