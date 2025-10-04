@@ -99,9 +99,10 @@ HackOps-HealthHub/
 
 🧩 Using npm
 
-git clone https://github.com/your-username/HackOps-HealthHub.git
+git clone https://github.com/ACEathon-2025/Team-18.git
 
-cd HackOps-HealthHub
+cd Team-18
+
 
 npm install
 
