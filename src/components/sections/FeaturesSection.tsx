@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Heart, Pill, Lightbulb, Phone, Activity } from 'lucide-react';
+import { Heart, Pill, Lightbulb, Phone, Activity, Brain } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const features = [
@@ -44,6 +44,14 @@ const features = [
     color: "text-orange-500",
     gradient: "from-orange-500/10 to-yellow-500/10",
     link: "/emergency-contacts"
+  },
+  {
+    icon: Brain,
+    title: "Health Quiz / Self-Assessment",
+    description: "Answer 10 quick questions about your daily habits and instantly get your Health Score with emoji-based feedback and smooth progress animations — all powered by frontend logic.",
+    color: "text-purple-500",
+    gradient: "from-purple-500/10 to-pink-500/10",
+    link: "/health-quiz"
   }
 ];
 
@@ -82,14 +90,18 @@ const FeaturesSection: React.FC = () => {
                 }}
               >
                 <Link to={feature.link}>
-                  <Card className="medical-card group cursor-pointer h-full">
-                    <CardHeader className="text-center pb-4">
-                      <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br ${feature.gradient} flex items-center justify-center group-hover:shadow-lg transition-all duration-300`}
-                      >
-                        <Icon className={`w-8 h-8 ${feature.color}`} />
-                      </motion.div>
+                  <motion.div
+                    whileHover={{ rotateY: 5, rotateX: 5, scale: 1.02 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
+                    className="h-full"
+                  >
+                    <Card className="medical-card group cursor-pointer h-full">
+                      <CardHeader className="text-center pb-4">
+                        <div
+                          className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br ${feature.gradient} flex items-center justify-center group-hover:shadow-lg transition-all duration-300`}
+                        >
+                          <Icon className={`w-8 h-8 ${feature.color}`} />
+                        </div>
                       <CardTitle className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
                         {feature.title}
                       </CardTitle>
@@ -100,6 +112,7 @@ const FeaturesSection: React.FC = () => {
                       </CardDescription>
                     </CardContent>
                   </Card>
+                </motion.div>
                 </Link>
               </motion.div>
             );

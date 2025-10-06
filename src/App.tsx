@@ -13,6 +13,7 @@ import EmergencyContacts from "./pages/EmergencyContacts";
 import WellnessArticles from "./pages/WellnessArticles";
 import PainMapper from "./pages/PainMapper";
 import NotFound from "./pages/NotFound";
+import HealthQuiz from "./components/sections/HealthQuiz";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/emergency-contacts" element={<EmergencyContacts />} />
             <Route path="/wellness-articles" element={<WellnessArticles />} />
             <Route path="/pain-mapper" element={<PainMapper />} />
+            <Route path="/health-quiz" element={<HealthQuiz />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

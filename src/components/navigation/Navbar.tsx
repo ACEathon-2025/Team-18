@@ -14,6 +14,7 @@ const Navbar: React.FC = () => {
     { path: '/first-aid', label: 'First Aid', icon: AlertTriangle },
     { path: '/medicine-reminders', label: 'Medicine', icon: Pill },
     { path: '/emergency-contacts', label: 'Emergency', icon: Phone },
+    { path: '/health-quiz', label: 'Health Quiz', icon: Activity },
   ];
 
   return (
