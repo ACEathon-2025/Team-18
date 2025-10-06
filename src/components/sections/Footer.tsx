@@ -10,12 +10,8 @@ const Footer: React.FC = () => {
     {
       title: "About Us",
       description:
-        "We are a team dedicated to building innovative solutions that simplify everyday tasks. Our mission is to empower people through technology, foster creativity, and create a positive impact in the digital world.",
-      links: [
-        { name: "Our Story", href: "#" },
-        { name: "Team", href: "#" },
-        { name: "Careers", href: "#" }
-      ]
+        "The team comprises Amish Rahman and Anish Kumar Patra, 2nd-year B.Tech students at NMAMIT. This project is developed for ACEathon 2025 to showcase innovative solutions in technology. We are passionate about creating impactful, user-friendly applications that address real-world challenges and inspire creativity. Through this project, we aim to explore cutting-edge technologies, refine our skills, and contribute meaningfully to the tech community.",
+      links: []
     }
   ];
 
@@ -76,43 +72,43 @@ const Footer: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Footer Sections */}
-          {footerSections.map((section, index) => (
-            <motion.div
-              key={section.title}
-              initial={{ y: 50, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 * index }}
-              className="space-y-4"
-            >
-              <h4 className="font-semibold text-foreground">{section.title}</h4>
+          {/* Footer Sections - Centered */}
+          <div className="lg:col-span-3 flex justify-center">
+            {footerSections.map((section, index) => (
+              <motion.div
+                key={section.title}
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 * index }}
+                className="space-y-4 text-center max-w-lg"
+              >
+                <h4 className="font-semibold text-foreground text-center">{section.title}</h4>
 
-              {/* Render description */}
-              {section.description && (
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {section.description}
-                </p>
-              )}
+                {section.description && (
+                  <p className="text-sm text-muted-foreground leading-relaxed text-center">
+                    {section.description}
+                  </p>
+                )}
 
-              {/* Render links if they exist */}
-              {section.links && section.links.length > 0 && (
-                <ul className="space-y-3">
-                  {section.links.map((link) => (
-                    <li key={link.name}>
-                      <motion.a
-                        href={link.href}
-                        whileHover={{ x: 4 }}
-                        className="text-muted-foreground hover:text-primary transition-colors text-sm"
-                      >
-                        {link.name}
-                      </motion.a>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </motion.div>
-          ))}
+                {section.links && section.links.length > 0 && (
+                  <ul className="space-y-3">
+                    {section.links.map((link) => (
+                      <li key={link.name}>
+                        <motion.a
+                          href={link.href}
+                          whileHover={{ x: 4 }}
+                          className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                        >
+                          {link.name}
+                        </motion.a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </motion.div>
+            ))}
+          </div>
         </div>
 
         <Separator className="my-8 opacity-50" />
