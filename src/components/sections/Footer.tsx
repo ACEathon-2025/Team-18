@@ -1,7 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Separator } from '@/components/ui/separator';
-import { Heart, Mail, Phone, MapPin, Github, Twitter, Linkedin } from 'lucide-react';
+import { Heart, Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
+
+// Custom LeetCode Icon
+const LeetCodeIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 48 48"
+    className="w-5 h-5"
+    fill="currentColor"
+  >
+    <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.837 0-16-7.163-16-16S15.163 8 24 8s16 7.163 16 16-7.163 16-16 16zm-1.5-24h3v10h-3V16zm0 12h3v2h-3v-2z" />
+  </svg>
+);
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -10,15 +22,15 @@ const Footer: React.FC = () => {
     {
       title: "About Us",
       description:
-        "The team comprises Amish Rahman and Anish Kumar Patra, 2nd-year B.Tech students at NMAMIT. This project is developed for ACEathon 2025 to showcase innovative solutions in technology. We are passionate about creating impactful, user-friendly applications that address real-world challenges and inspire creativity. Through this project, we aim to explore cutting-edge technologies, refine our skills, and contribute meaningfully to the tech community.",
+        "The team HackOps comprises Amish Rahman and Anish Kumar Patra, 2nd-year B.Tech students at NMAMIT. This project is developed for ACEathon 2025 to showcase innovative solutions in technology. We are passionate about creating impactful, user-friendly applications that address real-world challenges and inspire creativity. Through this project, we aim to explore cutting-edge technologies, refine our skills, and contribute meaningfully to the tech community.",
       links: []
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" }
+    { icon: Github, href: "https://github.com/AmishRahman2005", label: "GitHub" },
+    { icon: LeetCodeIcon, href: "https://leetcode.com/u/AmishRahman/", label: "LeetCode" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/amish-rahman-2k25/", label: "LinkedIn" }
   ];
 
   return (
@@ -123,7 +135,9 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-sm text-muted-foreground"
           >
-            © {currentYear} HackOps HealthHub. All rights reserved. | Built with ❤️ for better health.
+            © {currentYear} HackOps HealthHub. Powered by ⚡ Amish & Anish.
+
+
           </motion.div>
 
           {/* Social Links */}
@@ -145,7 +159,7 @@ const Footer: React.FC = () => {
                   className="w-10 h-10 bg-muted/50 hover:bg-primary/10 rounded-lg flex items-center justify-center group transition-all duration-300"
                   aria-label={social.label}
                 >
-                  <Icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                  {Icon && <Icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />}
                 </motion.a>
               );
             })}

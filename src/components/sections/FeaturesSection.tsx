@@ -48,7 +48,7 @@ const features = [
   {
     icon: Brain,
     title: "Health Quiz / Self-Assessment",
-    description: "Answer 10 quick questions about your daily habits and instantly get your Health Score with emoji-based feedback and smooth progress animations — all powered by frontend logic.",
+    description: "Answer 10 quick questions about your daily habits and instantly get your Health Score with emoji-based feedback and smooth progress animations — all powered by AI.",
     color: "text-purple-500",
     gradient: "from-purple-500/10 to-pink-500/10",
     link: "/health-quiz"
