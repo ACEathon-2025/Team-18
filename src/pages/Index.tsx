@@ -1,6 +1,7 @@
 import React from 'react';
 import ParticleBackground from '@/components/effects/ParticleBackground';
 import Navbar from '@/components/navigation/Navbar';
+import DailyQuote from '@/components/sections/DailyQuote';
 import HeroSection from '@/components/sections/HeroSection';
 import FeaturesSection from '@/components/sections/FeaturesSection';
 import DashboardShowcase from '@/components/sections/DashboardShowcase';
@@ -16,6 +17,11 @@ const Index: React.FC = () => {
       {/* Navigation */}
       <Navbar />
       
+      {/* Daily Health Quote */}
+      <section className="py-8 px-4">
+        <DailyQuote />
+      </section>
+
       {/* Main Content */}
       <main id="main-content" className="relative z-10" tabIndex={-1}>
         {/* Hero Section with 3D Medical Cross */}
