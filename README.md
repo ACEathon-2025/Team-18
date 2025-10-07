@@ -170,3 +170,4 @@ Smooth UX
 💼 LinkedIn:- www.linkedin.com/in/anish-patra-60543630a
 
 *Added Health Quiz Assessment Section and Updated the feature section
+**Added BMI Calculator and DailyQuote 
