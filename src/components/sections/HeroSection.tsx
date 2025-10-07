@@ -67,7 +67,8 @@ const HeroSection: React.FC = () => {
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-lg lg:text-xl text-foreground/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
+              id="hero-description"
+              className="text-lg lg:text-xl text-foreground dark:text-white max-w-2xl mx-auto lg:mx-0 leading-relaxed"
             >
               Experience the future of healthcare management with our innovative platform. 
               Get personalized health guidance, smart reminders, and emergency support—all in one place.
