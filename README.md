@@ -1,7 +1,7 @@
 🩺 HackOps HealthHub
 Your Health, Simplified.
 
-A smart, frontend-powered healthcare companion built with React + TypeScript + TailwindCSS
+A smart, responsive health management companion built using React, TypeScript, and TailwindCSS
 
 🚀 Overview
 
@@ -18,6 +18,8 @@ Developed as part of ACEathon 2025, it showcases how modern frontend technologie
 | 🩻 **Pain Mapper (3D)**              | Interactive human body visualization built with React Three Fiber.    |
 | 💊 **Medicine Reminder**             | Local reminder system stored in browser memory.                       |
 | 🩺 **Symptom Checker**               | Suggests possible causes using simple rule-based JS logic.            |
+| ⚖️ **BMI Calculator**                    |Calculates Body Mass Index based on user input and provides health insights.|
+| 💬 **Daily Quote**                        |Displays a motivational health or wellness quote every day with animations.|
 | ⛑️ **First Aid Guide**               | Expandable cards with step-by-step medical instructions.              |
 | 🧠 **Health Tips**                   | Curated list of daily wellness insights.                              |
 | 🗺️ **Emergency Contact**             | Stores emergency details safely in localStorage.                      |
@@ -99,29 +101,22 @@ HackOps-HealthHub/
 
 🧩 Using npm
 
-git clone https://github.com/ACEathon-2025/Team-18.git
-
-cd Team-18
-
-
-npm install
-
-npm run dev
+<img width="544" height="125" alt="image" src="https://github.com/user-attachments/assets/2621c256-b6cb-4d2c-ad93-aaea66a44d6d" />
 
 
 ⚡ Using Bun
 
-bun install
-
-bun dev
+<img width="144" height="60" alt="image" src="https://github.com/user-attachments/assets/2fdc7fc1-c995-4595-92ee-27afafe56a46" />
 
 🧠 How It Works
 
-Launch the homepage to explore interactive tools like Pain Mapper, Health Tips, and Symptom Checker — each designed for intuitive, real-time feedback.
+Launch the homepage to explore interactive tools like Pain Mapper, Health Tips, Symptom Checker, BMI Calculator, and Daily Quote — each designed for intuitive, real-time feedback.
 
 Navigate through different modules such as First Aid, Emergency Contacts, and Medicine Reminders for quick access to essential health resources.
 
-The platform intelligently integrates animations, local data storage, and 3D visuals to create a smooth, app-like experience that runs entirely in your browser.
+The BMI Calculator allows users to calculate their Body Mass Index and get immediate health suggestions.
+
+The Daily Quote section delivers a motivational health or wellness quote every day, enhancing user engagement with subtle animations.
 
 
 🎨 UI Highlights
@@ -169,5 +164,4 @@ Smooth UX
 
 💼 LinkedIn:- www.linkedin.com/in/anish-patra-60543630a
 
-*Added Health Quiz Assessment Section and Updated the feature section
-**Added BMI Calculator and DailyQuote 
+
