@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import BlurText from '../BlurText';
 
 interface Quote {
   text: string;
@@ -40,23 +41,26 @@ const DailyQuote: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[200px] p-4 text-center bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg shadow-lg">
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentQuote.text}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.5 }}
-          className="max-w-3xl"
-        >
-          <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 leading-tight">
-            "{currentQuote.text}"
-          </p>
-          <p className="text-lg md:text-xl text-gray-600 font-medium">
-            - {currentQuote.author}
-          </p>
-        </motion.div>
-      </AnimatePresence>
+      <div className="max-w-3xl">
+        <AnimatePresence mode="wait">
+          <BlurText
+            key={currentQuote.text}
+            text={`"${currentQuote.text}"`}
+            delay={150}
+            animateBy="words"
+            direction="top"
+            className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 leading-tight"
+          />
+          <BlurText
+            key={currentQuote.author}
+            text={`- ${currentQuote.author}`}
+            delay={100}
+            animateBy="words"
+            direction="bottom"
+            className="text-lg md:text-xl text-gray-600 font-medium"
+          />
+        </AnimatePresence>
+      </div>
     </div>
   );
 };
