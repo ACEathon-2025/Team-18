@@ -12,7 +12,7 @@ interface BlurTextProps {
 
 const BlurText: React.FC<BlurTextProps> = ({
   text,
-  delay = 100,
+  delay = 50,
   animateBy = 'words',
   direction = 'top',
   onAnimationComplete,
