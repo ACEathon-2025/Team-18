@@ -17,7 +17,7 @@ const quotes: Quote[] = [
   { text: "Healing is a matter of time, but it is sometimes also a matter of opportunity.", author: "Hippocrates" },
   { text: "The groundwork for all happiness is good health.", author: "Leigh Hunt" },
   { text: "Happiness is the highest form of health.", author: "Dalai Lama" },
-  { text: "The mind and body are not separate. What affects one, affects the other.", author: "Unknown" },
+  { text: "The mind and body are not separate. What affects one, affects the other.", author: "Epicurus" },
   { text: "Good health is not something we can buy. However, it can be an extremely valuable savings account.", author: "Anne Wilson Schaef" },
   { text: "Early to bed and early to rise makes a man healthy, wealthy, and wise.", author: "Benjamin Franklin" },
   { text: "Health is a state of complete harmony of the body, mind, and spirit.", author: "B.K.S. Iyengar" },

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Heart, Stethoscope, Pill, Phone, AlertTriangle, Lightbulb, Activity } from 'lucide-react';
+import { Heart, Stethoscope, Pill, Phone, AlertTriangle, Lightbulb, Activity, ClipboardCheck } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
     { path: '/first-aid', label: 'First Aid', icon: AlertTriangle },
     { path: '/medicine-reminders', label: 'Medicine', icon: Pill },
     { path: '/emergency-contacts', label: 'Emergency', icon: Phone },
-    { path: '/health-quiz', label: 'Health Quiz', icon: Activity },
+    { path: '/health-quiz', label: 'Health Quiz', icon: ClipboardCheck },
   ];
 
   return (
