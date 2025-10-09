@@ -144,7 +144,6 @@ Focus Areas:
 
 Accessibility-first design
 
-Frontend innovation
 
 Offline readiness
 
