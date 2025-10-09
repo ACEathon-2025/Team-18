@@ -3,6 +3,10 @@ Your Health, Simplified.
 
 A smart, responsive health management companion built using React, TypeScript, and TailwindCSS
 
+# 🌐 Live Demo
+[Click here to view HackOps HealthHub](https://hackopshealthhub.vercel.app/)
+
+
 🚀 Overview
 
 HackOps HealthHub is an interactive and intelligent frontend-only health management platform.
