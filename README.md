@@ -5,44 +5,47 @@ Your Health, Simplified.
 A smart, responsive health management companion built using React, TypeScript, and TailwindCSS
 
 # 🌐 Live Demo
-[Click here to view HackOps HealthHub](https://hackopshealthhub.vercel.app/)
+[Click here to view HackOps HealthHub](https://hack-ops-health.vercel.app/)
 
 
 🚀 Overview
 
-HackOps HealthHub is an interactive and intelligent frontend-only health management platform.
-It simplifies healthcare with AI-inspired tools, 3D visualization, and accessible UI — all running entirely in the browser.
+HackOps HealthHub is an interactive, modern web-based health management platform.
+It simplifies healthcare with AI-inspired tools, 3D visualization, and accessible UI — all running seamlessly online.
 
-Developed as part of ACEathon 2025, it showcases how modern frontend technologies can deliver meaningful and intuitive digital health experiences.
+Developed as part of ACEathon 2025, it showcases how modern web technologies can deliver meaningful and intuitive digital health experiences.
 
 🧩 Key Features
 
-| Feature                            | Description                                                                            |
-| ---------------------------------- | -------------------------------------------------------------------------------------- |
-| 🏠 **Home Page**                   | Engaging hero section with brand identity and CTAs.                                    |
-| 🩻 **Pain Mapper (3D)**            | Interactive human body visualization built with React Three Fiber.                     |
-| 💊 **Medicine Reminder**           | Local reminder system stored in browser memory.                                        |
-| 🩺 **Symptom Checker**             | Suggests possible causes using simple rule-based JS logic.                             |
-| ⚖️ **BMI Calculator**              | Calculates Body Mass Index based on user input and provides health insights.           |
-| 💬 **Daily Quote**                 | Displays a motivational health or wellness quote every day with animations.            |
-| ⛑️ **First Aid Guide**             | Expandable cards with step-by-step medical instructions.                               |
-| 🧠 **Health Tips**                 | Curated list of daily wellness insights.                                               |
-| 🗺️ **Emergency Contact**          | Stores emergency details safely in localStorage.                                       |
-| 🏥 **Nearby Hospitals & Medicals** | Shows hospitals, clinics, and pharmacies near the user location on an interactive map. |
-| 📊 **Dashboard Showcase**          | Displays health data summaries visually.                                               |
-| 🌙 **Dark/Light Mode**             | Fully theme-adaptive using Tailwind’s dark mode and context.                           |
+| Feature                            | Description                                                                             |
+| ---------------------------------- | --------------------------------------------------------------------------------------- |
+| 🏠 **Home Page**                   | Engaging hero section with brand identity and CTAs.                                     |
+| 🩻 **Pain Mapper (3D)**            | Interactive human body visualization built with React Three Fiber.                      |
+| 💊 **Medicine Reminder**           | Local reminder system stored in browser memory.                                         |
+| 🩺 **Symptom Checker**             | Suggests possible causes using simple rule-based JS logic.                              |
+| ⚖️ **BMI Calculator**              | Calculates Body Mass Index based on user input and provides health insights.            |
+| 💬 **Daily Quote**                 | Displays a motivational health or wellness quote every day with animations.             |
+| ⛑️ **First Aid Guide**             | Expandable cards with step-by-step medical instructions.                                |
+| 🧠 **Health Tips**                 | Curated list of daily wellness insights.                                                |
+| 🗺️ **Emergency Contact**          | Stores emergency details safely in localStorage.                                        |
+| 🏥 **Nearby Hospitals & Medicals** | Shows hospitals, clinics, and pharmacies near the user location on an interactive map.  |
+| 📊 **Dashboard Showcase**          | Displays health data summaries visually.                                                |
+| 🌙 **Dark/Light Mode**             | Fully theme-adaptive using Tailwind’s dark mode and context.                            |
+| 🤖 **AI Chatbot**                  | A floating chatbot that answers health-related queries and HackOps HealthHub questions. |
+
 
 
 💻 Tech Stack
-| Category        | Tools / Libraries          |
-| --------------- | -------------------------- |
-| Frontend        | React (TypeScript)         |
-| Styling         | Tailwind CSS               |
-| Animations      | Framer Motion              |
-| 3D Visuals      | React Three Fiber / Drei   |
-| Icons           | Lucide React               |
-| Build Tool      | Vite                       |
-| Package Manager | Bun / npm (both supported) |
+| Category        | Tools / Libraries                            |
+| --------------- | -------------------------------------------- |
+| Frontend        | React (TypeScript)                           |
+| Styling         | Tailwind CSS                                 |
+| Animations      | Framer Motion                                |
+| 3D Visuals      | React Three Fiber / Drei                     |
+| Backend         | Node.js / Express (for AI chatbot & Q&A API) |
+| Icons           | Lucide React                                 |
+| Build Tool      | Vite                                         |
+| Package Manager | Bun / npm (both supported)                   |
 
 🧱 Folder Structure
 
@@ -106,11 +109,6 @@ HackOps-HealthHub/
 
 ## ⚙️ Installation & Setup
 
-### 🔹 Clone the Repository
-
-    git clone https://github.com/ACEathon-2025/Team-18.git
-    cd Team-18
-
 ### 🧩 Using npm
 
     npm install
@@ -129,6 +127,8 @@ Launch the homepage to explore interactive tools like:
 - **First Aid**, **Emergency Contacts**, and **Medicine Reminders** modules provide essential health resources instantly.
 - **BMI Calculator** provides immediate health suggestions.
 - **Daily Quote** delivers motivational health or wellness messages with subtle animations.
+- **Nearby Hospitals & Medical** Shows hospitals, clinics, and pharmacies around the user’s location on a dynamic map
+- **AI Chatbot** Answers health questions and provides guidance on using HackOps HealthHub features 
 
 
 ## 🎨 UI Highlights
@@ -139,6 +139,10 @@ Launch the homepage to explore interactive tools like:
 - Intuitive icons and clean navigation
 - Subtle particle and 3D effects
 - Map integration for local health facilities
+- Floating AI Chatbot for interactive guidance
+
+
+
 
 
 ## 🏆 Hackathon Context
