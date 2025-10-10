@@ -1,5 +1,6 @@
-🩺 HackOps HealthHub
+# 🩺 HackOps HealthHub
 Your Health, Simplified.
+
 
 A smart, responsive health management companion built using React, TypeScript, and TailwindCSS
 
@@ -16,19 +17,21 @@ Developed as part of ACEathon 2025, it showcases how modern frontend technologie
 
 🧩 Key Features
 
-| Feature                              | Description                                                           |
-| ------------------------------------ | --------------------------------------------------------------------- |
-| 🏠 **Home Page**                     | Engaging hero section with brand identity and CTAs.                   |
-| 🩻 **Pain Mapper (3D)**              | Interactive human body visualization built with React Three Fiber.    |
-| 💊 **Medicine Reminder**             | Local reminder system stored in browser memory.                       |
-| 🩺 **Symptom Checker**               | Suggests possible causes using simple rule-based JS logic.            |
-| ⚖️ **BMI Calculator**                    |Calculates Body Mass Index based on user input and provides health insights.|
-| 💬 **Daily Quote**                        |Displays a motivational health or wellness quote every day with animations.|
-| ⛑️ **First Aid Guide**               | Expandable cards with step-by-step medical instructions.              |
-| 🧠 **Health Tips**                   | Curated list of daily wellness insights.                              |
-| 🗺️ **Emergency Contact**             | Stores emergency details safely in localStorage.                      |
-| 📊 **Dashboard Showcase**            | Displays health data summaries visually.                              |
-| 🌙 **Dark/Light Mode**               | Fully theme-adaptive using Tailwind’s dark mode and context.          |
+| Feature                            | Description                                                                            |
+| ---------------------------------- | -------------------------------------------------------------------------------------- |
+| 🏠 **Home Page**                   | Engaging hero section with brand identity and CTAs.                                    |
+| 🩻 **Pain Mapper (3D)**            | Interactive human body visualization built with React Three Fiber.                     |
+| 💊 **Medicine Reminder**           | Local reminder system stored in browser memory.                                        |
+| 🩺 **Symptom Checker**             | Suggests possible causes using simple rule-based JS logic.                             |
+| ⚖️ **BMI Calculator**              | Calculates Body Mass Index based on user input and provides health insights.           |
+| 💬 **Daily Quote**                 | Displays a motivational health or wellness quote every day with animations.            |
+| ⛑️ **First Aid Guide**             | Expandable cards with step-by-step medical instructions.                               |
+| 🧠 **Health Tips**                 | Curated list of daily wellness insights.                                               |
+| 🗺️ **Emergency Contact**          | Stores emergency details safely in localStorage.                                       |
+| 🏥 **Nearby Hospitals & Medicals** | Shows hospitals, clinics, and pharmacies near the user location on an interactive map. |
+| 📊 **Dashboard Showcase**          | Displays health data summaries visually.                                               |
+| 🌙 **Dark/Light Mode**             | Fully theme-adaptive using Tailwind’s dark mode and context.                           |
+
 
 💻 Tech Stack
 | Category        | Tools / Libraries          |
@@ -61,7 +64,7 @@ HackOps-HealthHub/
 
 │   │   ├── sections/        # Hero, Features, Dashboard, Footer
 
-│   │   └── ui/              # Reusable UI components
+│   │   └── ui/              # Reusable UI components, Maps
 
 │   │
 
@@ -101,53 +104,49 @@ HackOps-HealthHub/
 
 
 
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
-🧩 Using npm
+### 🔹 Clone the Repository
 
-<img width="544" height="125" alt="image" src="https://github.com/user-attachments/assets/2621c256-b6cb-4d2c-ad93-aaea66a44d6d" />
+    git clone https://github.com/ACEathon-2025/Team-18.git
+    cd Team-18
 
+### 🧩 Using npm
 
-⚡ Using Bun
+    npm install
+    npm run dev
 
-<img width="144" height="60" alt="image" src="https://github.com/user-attachments/assets/2fdc7fc1-c995-4595-92ee-27afafe56a46" />
+### ⚡ Using Bun
 
-🧠 How It Works
+    bun install
+    bun dev
+## 🧠 How It Works
 
-Launch the homepage to explore interactive tools like Pain Mapper, Health Tips, Symptom Checker, BMI Calculator, and Daily Quote — each designed for intuitive, real-time feedback.
+Launch the homepage to explore interactive tools like:
 
-Navigate through different modules such as First Aid, Emergency Contacts, and Medicine Reminders for quick access to essential health resources.
-
-The BMI Calculator allows users to calculate their Body Mass Index and get immediate health suggestions.
-
-The Daily Quote section delivers a motivational health or wellness quote every day, enhancing user engagement with subtle animations.
-
-
-🎨 UI Highlights
-
-Fully responsive and accessible layout
-
-Animated transitions with Framer Motion
-
-Blue–green health-focused color palette
-
-Intuitive icons and clean navigation
-
-Subtle particle and 3D effects
-
-🏆 Hackathon Context
-
-Built for: ACEathon 2025
-Theme: AI & HealthTech for All
-
-Focus Areas:
-
-Accessibility-first design
+- **Pain Mapper**, **Health Tips**, **Symptom Checker**, **BMI Calculator**, and **Daily Quote** — each designed for intuitive, real-time feedback.
+- **Nearby Hospitals & Medicals** displays hospitals, clinics, and pharmacies around the user’s location on a dynamic map for quick access.
+- **First Aid**, **Emergency Contacts**, and **Medicine Reminders** modules provide essential health resources instantly.
+- **BMI Calculator** provides immediate health suggestions.
+- **Daily Quote** delivers motivational health or wellness messages with subtle animations.
 
 
-Offline readiness
+## 🎨 UI Highlights
 
-Smooth UX
+- Fully responsive and accessible layout
+- Animated transitions with Framer Motion
+- Blue–green health-focused color palette
+- Intuitive icons and clean navigation
+- Subtle particle and 3D effects
+- Map integration for local health facilities
+
+
+## 🏆 Hackathon Context
+
+- **Built for:** ACEathon 2025
+- **Theme:** AI & HealthTech for All
+- **Focus Areas:** Accessibility-first design, offline readiness, smooth UX
+
 
 👨‍💻 Developers
 
