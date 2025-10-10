@@ -7,6 +7,7 @@ import FeaturesSection from '@/components/sections/FeaturesSection';
 import DashboardShowcase from '@/components/sections/DashboardShowcase';
 import AccessibilitySection from '@/components/sections/AccessibilitySection';
 import Footer from '@/components/sections/Footer';
+import NearbyHospitals from '@/components/NearbyHospitals';
 
 const Index: React.FC = () => {
   return (
@@ -38,6 +39,7 @@ const Index: React.FC = () => {
       </main>
       
       {/* Footer */}
+      <NearbyHospitals />
       <Footer />
     </div>
   );
